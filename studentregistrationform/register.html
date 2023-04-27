@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            background-color:coral;
+        }
+        .title {
+            color: white;
+        }
+        .container {
+            position: relative;
+        }
+        .form {
+            background-color: rgb(31, 31, 221);
+            height: 480px;
+            width: 500px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -250px;
+            margin-top: 60px;
+            border: black;
+            border-style: dashed;
+            color: white;
+        }
+        .chu {
+            padding-left: 200px;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <center>
+                <h3><u>Registration 2022-23</u></h3>
+                <h3><u>Student Registration Form</u></h3>
+            </center>
+        </div>
+        <div class="form">
+            <form action="" method="post">
+                <table>
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input type="text" name="first_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name:</td>
+                        <td><input type="text" name="last_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number:</td>
+                        <td><input type="tel" name="mobile"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <input type="radio" name="gender" value="male"> Male
+                            <input type="radio" name="gender" value="female"> Female<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth:</td>
+                        <td><input type="date" name="dob"></td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td><textarea name="address"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td><input type="text" name="city"></td>
+                    </tr>
+                    <tr>
+                        <td>Pincode:</td>
+                        <td><input type="text" name="pincode"></td>
+                    </tr>
+                    <tr>
+                        <td>State:</td>
+                        <td><input type="text" name="state"></td>
+                    </tr>
+                    <tr>
+                        <td>Country:</td>
+                        <td><input type="text" name="country"></td>
+                    </tr>
+                    <tr>
+                        <td>Hobbies:</td>
+                        <td>
+                            <input type="checkbox" name="hobbies[]" value="Drawing"> Drawing
+                            <input type="checkbox" name="hobbies[]" value="Singing"> Singing
+                            <input type="checkbox" name="hobbies[]" value="Dancing"> Dancing
+                            <input type="checkbox" name="hobbies[]" value="Sketching"> Sketching<br>
+                            <input type="checkbox" name="hobbies[]" value="Others"> Others
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Qualifications:</td>
+                        <td>
+                            <input type="checkbox" name="qualifications[]" value="High School"> High School<br>
+                            <input type="checkbox" name="qualifications[]" value="Graduation"> Graduation<br>
+                            <input type="checkbox" name="qualifications[]" value="Post Graduation"> Post Graduation
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Courses Applied For:</td>
+                        <td>
+                            <select name="courses">
+                                <option value="B.Tech">B.Tech</option>
+                                <option value="BBA">BBA</option>
+                                <option value="B.Com">BCOM</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <div class="chu">
+                    <button class="submit-but">
+                        Submit
+                    </button>
+                    <button class="reset-but">
+                        Reset
+                    </button>
+                </div>                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
